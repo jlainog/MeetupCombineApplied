@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */; };
+		FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */; };
+		FB0E110B2469B9F400FCDAC2 /* LoginUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E110A2469B9F400FCDAC2 /* LoginUIKitViewController.swift */; };
+		FB0E110E2469B9F400FCDAC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0E110C2469B9F400FCDAC2 /* Main.storyboard */; };
+		FB0E11102469B9F700FCDAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0E110F2469B9F700FCDAC2 /* Assets.xcassets */; };
+		FB0E11132469B9F700FCDAC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0E11112469B9F700FCDAC2 /* LaunchScreen.storyboard */; };
+		FB0E111E2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E111D2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift */; };
+		FB0E11292469BA4100FCDAC2 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11282469BA4100FCDAC2 /* CombineViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB0E111A2469B9F800FCDAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB0E10FB2469B9F400FCDAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB0E11022469B9F400FCDAC2;
+			remoteInfo = MeetupCombineApplied;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupCombineApplied.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB0E110A2469B9F400FCDAC2 /* LoginUIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIKitViewController.swift; sourceTree = "<group>"; };
+		FB0E110D2469B9F400FCDAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB0E110F2469B9F700FCDAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB0E11122469B9F700FCDAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB0E11142469B9F700FCDAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0E11192469B9F800FCDAC2 /* MeetupCombineAppliedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupCombineAppliedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0E111D2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupCombineAppliedTests.swift; sourceTree = "<group>"; };
+		FB0E111F2469B9F800FCDAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0E11282469BA4100FCDAC2 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB0E11002469B9F400FCDAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0E11162469B9F800FCDAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB0E10FA2469B9F400FCDAC2 = {
+			isa = PBXGroup;
+			children = (
+				FB0E11052469B9F400FCDAC2 /* MeetupCombineApplied */,
+				FB0E111C2469B9F800FCDAC2 /* MeetupCombineAppliedTests */,
+				FB0E11042469B9F400FCDAC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB0E11042469B9F400FCDAC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */,
+				FB0E11192469B9F800FCDAC2 /* MeetupCombineAppliedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB0E11052469B9F400FCDAC2 /* MeetupCombineApplied */ = {
+			isa = PBXGroup;
+			children = (
+				FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */,
+				FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */,
+				FB0E110A2469B9F400FCDAC2 /* LoginUIKitViewController.swift */,
+				FB0E110C2469B9F400FCDAC2 /* Main.storyboard */,
+				FB0E11282469BA4100FCDAC2 /* CombineViewController.swift */,
+				FB0E110F2469B9F700FCDAC2 /* Assets.xcassets */,
+				FB0E11112469B9F700FCDAC2 /* LaunchScreen.storyboard */,
+				FB0E11142469B9F700FCDAC2 /* Info.plist */,
+			);
+			path = MeetupCombineApplied;
+			sourceTree = "<group>";
+		};
+		FB0E111C2469B9F800FCDAC2 /* MeetupCombineAppliedTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0E111D2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift */,
+				FB0E111F2469B9F800FCDAC2 /* Info.plist */,
+			);
+			path = MeetupCombineAppliedTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB0E11022469B9F400FCDAC2 /* MeetupCombineApplied */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0E11222469B9F800FCDAC2 /* Build configuration list for PBXNativeTarget "MeetupCombineApplied" */;
+			buildPhases = (
+				FB0E10FF2469B9F400FCDAC2 /* Sources */,
+				FB0E11002469B9F400FCDAC2 /* Frameworks */,
+				FB0E11012469B9F400FCDAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetupCombineApplied;
+			productName = MeetupCombineApplied;
+			productReference = FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB0E11182469B9F800FCDAC2 /* MeetupCombineAppliedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0E11252469B9F800FCDAC2 /* Build configuration list for PBXNativeTarget "MeetupCombineAppliedTests" */;
+			buildPhases = (
+				FB0E11152469B9F800FCDAC2 /* Sources */,
+				FB0E11162469B9F800FCDAC2 /* Frameworks */,
+				FB0E11172469B9F800FCDAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB0E111B2469B9F800FCDAC2 /* PBXTargetDependency */,
+			);
+			name = MeetupCombineAppliedTests;
+			productName = MeetupCombineAppliedTests;
+			productReference = FB0E11192469B9F800FCDAC2 /* MeetupCombineAppliedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB0E10FB2469B9F400FCDAC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "David Andres Cespedes";
+				TargetAttributes = {
+					FB0E11022469B9F400FCDAC2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FB0E11182469B9F800FCDAC2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FB0E11022469B9F400FCDAC2;
+					};
+				};
+			};
+			buildConfigurationList = FB0E10FE2469B9F400FCDAC2 /* Build configuration list for PBXProject "MeetupCombineApplied" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB0E10FA2469B9F400FCDAC2;
+			productRefGroup = FB0E11042469B9F400FCDAC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB0E11022469B9F400FCDAC2 /* MeetupCombineApplied */,
+				FB0E11182469B9F800FCDAC2 /* MeetupCombineAppliedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB0E11012469B9F400FCDAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0E11132469B9F700FCDAC2 /* LaunchScreen.storyboard in Resources */,
+				FB0E11102469B9F700FCDAC2 /* Assets.xcassets in Resources */,
+				FB0E110E2469B9F400FCDAC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0E11172469B9F800FCDAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB0E10FF2469B9F400FCDAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0E110B2469B9F400FCDAC2 /* LoginUIKitViewController.swift in Sources */,
+				FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */,
+				FB0E11292469BA4100FCDAC2 /* CombineViewController.swift in Sources */,
+				FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0E11152469B9F800FCDAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0E111E2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB0E111B2469B9F800FCDAC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB0E11022469B9F400FCDAC2 /* MeetupCombineApplied */;
+			targetProxy = FB0E111A2469B9F800FCDAC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB0E110C2469B9F400FCDAC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0E110D2469B9F400FCDAC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB0E11112469B9F700FCDAC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0E11122469B9F700FCDAC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB0E11202469B9F800FCDAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB0E11212469B9F800FCDAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB0E11232469B9F800FCDAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeetupCombineApplied/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsrmarketingservice.MeetupCombineApplied;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB0E11242469B9F800FCDAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeetupCombineApplied/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsrmarketingservice.MeetupCombineApplied;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB0E11262469B9F800FCDAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeetupCombineAppliedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsrmarketingservice.MeetupCombineAppliedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetupCombineApplied.app/MeetupCombineApplied";
+			};
+			name = Debug;
+		};
+		FB0E11272469B9F800FCDAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeetupCombineAppliedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsrmarketingservice.MeetupCombineAppliedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetupCombineApplied.app/MeetupCombineApplied";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB0E10FE2469B9F400FCDAC2 /* Build configuration list for PBXProject "MeetupCombineApplied" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0E11202469B9F800FCDAC2 /* Debug */,
+				FB0E11212469B9F800FCDAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0E11222469B9F800FCDAC2 /* Build configuration list for PBXNativeTarget "MeetupCombineApplied" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0E11232469B9F800FCDAC2 /* Debug */,
+				FB0E11242469B9F800FCDAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0E11252469B9F800FCDAC2 /* Build configuration list for PBXNativeTarget "MeetupCombineAppliedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0E11262469B9F800FCDAC2 /* Debug */,
+				FB0E11272469B9F800FCDAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB0E10FB2469B9F400FCDAC2 /* Project object */;
+}
