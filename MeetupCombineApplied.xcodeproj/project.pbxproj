@@ -15,6 +15,9 @@
 		FB0E11132469B9F700FCDAC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0E11112469B9F700FCDAC2 /* LaunchScreen.storyboard */; };
 		FB0E111E2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E111D2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift */; };
 		FB0E11292469BA4100FCDAC2 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11282469BA4100FCDAC2 /* CombineViewController.swift */; };
+		FBE25E18246BA0BC00FA9CE7 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE25E17246BA0BC00FA9CE7 /* NameTableViewCell.swift */; };
+		FBE25E1A246BA72600FA9CE7 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE25E19246BA72600FA9CE7 /* PasswordTableViewCell.swift */; };
+		FBE25E1C246BA9C900FA9CE7 /* ContinueButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE25E1B246BA9C900FA9CE7 /* ContinueButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		FB0E111D2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupCombineAppliedTests.swift; sourceTree = "<group>"; };
 		FB0E111F2469B9F800FCDAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0E11282469BA4100FCDAC2 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		FBE25E17246BA0BC00FA9CE7 /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		FBE25E19246BA72600FA9CE7 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		FBE25E1B246BA9C900FA9CE7 /* ContinueButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		FB0E11052469B9F400FCDAC2 /* MeetupCombineApplied */ = {
 			isa = PBXGroup;
 			children = (
+				FBE25E15246B9FEC00FA9CE7 /* Views */,
 				FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */,
 				FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */,
 				FB0E110A2469B9F400FCDAC2 /* LoginUIKitViewController.swift */,
@@ -100,6 +107,24 @@
 				FB0E111F2469B9F800FCDAC2 /* Info.plist */,
 			);
 			path = MeetupCombineAppliedTests;
+			sourceTree = "<group>";
+		};
+		FBE25E15246B9FEC00FA9CE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBE25E16246B9FF500FA9CE7 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBE25E16246B9FF500FA9CE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FBE25E17246BA0BC00FA9CE7 /* NameTableViewCell.swift */,
+				FBE25E19246BA72600FA9CE7 /* PasswordTableViewCell.swift */,
+				FBE25E1B246BA9C900FA9CE7 /* ContinueButtonTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE25E1A246BA72600FA9CE7 /* PasswordTableViewCell.swift in Sources */,
 				FB0E110B2469B9F400FCDAC2 /* LoginUIKitViewController.swift in Sources */,
 				FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */,
 				FB0E11292469BA4100FCDAC2 /* CombineViewController.swift in Sources */,
+				FBE25E1C246BA9C900FA9CE7 /* ContinueButtonTableViewCell.swift in Sources */,
 				FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */,
+				FBE25E18246BA0BC00FA9CE7 /* NameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
