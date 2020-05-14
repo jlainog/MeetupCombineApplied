@@ -36,7 +36,7 @@ private extension LoginViewModel {
     var isValidUserNamePublisher: AnyPublisher<Bool, Never> {
         $mail
             .removeDuplicates()
-            .map { $0.count >= 2 }
+            .map { $0.count > 2 }
             .eraseToAnyPublisher()
     }
     
