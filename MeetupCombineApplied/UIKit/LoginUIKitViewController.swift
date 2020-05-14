@@ -29,15 +29,13 @@ final class LoginUIKitViewModel {
     var passwordMessage: String = "Validate your passwords are equal and contains at leats 6 characters"
     var enabledContinue: Bool = false
     
-    var reloadEmailFooter: ((String) -> Void)?
-    var reloadPasswordFooter: ((String) -> Void)?
+    var reloadUI: ((String, String, Bool) -> Void)?
     
     func updateUI() {
         mailMessage = isValidUserName ? "" : "Your mail should be longer than 3 characters"
         passwordMessage = isPasswordValid ? "" : "Validate your passwords are equal and contains at leats 6 characters"
         enabledContinue = isLoginInfoValid
-        reloadEmailFooter?(mailMessage)
-        reloadPasswordFooter?(passwordMessage)
+        reloadUI?(mailMessage, passwordMessage, enabledContinue)
     }
     
     var isValidUserName: Bool {
@@ -73,28 +71,36 @@ class LoginUIKitViewController: UITableViewController {
     @IBOutlet weak var passwordAgainTextField: UITextField!
     
     private var viewModel: LoginUIKitViewModel = .init()
+    private var observer: NSObjectProtocol?
+    
+    deinit {
+        NotificationCenter.default.removeObserver(observer!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.reloadEmailFooter = { [weak self] text in
+        viewModel.reloadUI = { [weak self] emailMessage, passwordMessage, isButtonEnable in
             self?.tableView.beginUpdates()
+            
             let emailfooter = self?.tableView.footerView(forSection: 0)
-            emailfooter?.textLabel?.text = text
+            emailfooter?.textLabel?.text = emailMessage
             emailfooter?.textLabel?.textColor = .red
-            self?.tableView.endUpdates()
-        }
-        viewModel.reloadPasswordFooter = { [weak self] text in
-            self?.tableView.beginUpdates()
+
             let passwordfooter = self?.tableView.footerView(forSection: 1)
-            passwordfooter?.textLabel?.text = text
+            passwordfooter?.textLabel?.text = passwordMessage
             passwordfooter?.textLabel?.textColor = .red
+            
+            if self?.continueButton.isEnabled != isButtonEnable {
+                self?.continueButton.isEnabled = isButtonEnable
+            }
+            
             self?.tableView.endUpdates()
         }
         
-        NotificationCenter.default.addObserver(
+        self.observer = NotificationCenter.default.addObserver(
             forName: UITextField.textDidChangeNotification,
-                                               object: nil,
-                                               queue: nil
+            object: nil,
+            queue: nil
         ) { [weak self] (notification) in
             guard let textField = notification.object as? UITextField else { return }
             
@@ -113,24 +119,4 @@ class LoginUIKitViewController: UITableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        if section == 0 {
-            return viewModel.mailMessage
-        } else if section == 1 {
-            return viewModel.passwordMessage
-        } else {
-            return " "
-        }
-    }
-}
-
-extension LoginUIKitViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField,
-                   shouldChangeCharactersIn range: NSRange,
-                   replacementString string: String) -> Bool {
-        
-        
-        
-        return true
-    }
 }
