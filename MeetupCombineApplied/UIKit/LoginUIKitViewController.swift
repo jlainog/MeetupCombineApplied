@@ -60,4 +60,9 @@ class LoginUIKitViewController: UITableViewController {
             }
         }.store(in: &cancellables)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        reloadUI()
+    }
 }
