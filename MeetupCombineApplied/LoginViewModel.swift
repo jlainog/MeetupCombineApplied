@@ -44,7 +44,6 @@ private extension LoginViewModel {
         $password
             .removeDuplicates()
             .map { !$0.isEmpty }
-            .print()
             .eraseToAnyPublisher()
     }
     
