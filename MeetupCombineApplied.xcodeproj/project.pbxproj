@@ -19,7 +19,6 @@
 		02BC3091247AD8190021031E /* Navajo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3086247AD8190021031E /* Navajo.swift */; };
 		02BC3092247AD8190021031E /* RegularExpressionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3087247AD8190021031E /* RegularExpressionRule.swift */; };
 		02BC3093247AD8190021031E /* AllowedCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3088247AD8190021031E /* AllowedCharacterRule.swift */; };
-		02C49152246CB5FE00C632E9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C49151246CB5FE00C632E9 /* LoginViewModel.swift */; };
 		FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */; };
 		FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */; };
 		FB0E110B2469B9F400FCDAC2 /* LoginUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E110A2469B9F400FCDAC2 /* LoginUIKitViewController.swift */; };
@@ -52,7 +51,6 @@
 		02BC3086247AD8190021031E /* Navajo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navajo.swift; sourceTree = "<group>"; };
 		02BC3087247AD8190021031E /* RegularExpressionRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionRule.swift; sourceTree = "<group>"; };
 		02BC3088247AD8190021031E /* AllowedCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllowedCharacterRule.swift; sourceTree = "<group>"; };
-		02C49151246CB5FE00C632E9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupCombineApplied.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +139,7 @@
 		FB0E11052469B9F400FCDAC2 /* MeetupCombineApplied */ = {
 			isa = PBXGroup;
 			children = (
-				02C49151246CB5FE00C632E9 /* LoginViewModel.swift */,
+				02BC307A2479CE2D0021031E /* LoginCore.swift */,
 				02C4914F246CB5CB00C632E9 /* UIKit */,
 				02C49150246CB5D600C632E9 /* SwiftUI */,
 				FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */,
@@ -150,7 +148,6 @@
 				FB0E110F2469B9F700FCDAC2 /* Assets.xcassets */,
 				FB0E11112469B9F700FCDAC2 /* LaunchScreen.storyboard */,
 				FB0E11142469B9F700FCDAC2 /* Info.plist */,
-				02BC307A2479CE2D0021031E /* LoginCore.swift */,
 			);
 			path = MeetupCombineApplied;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 				FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */,
 				02BC308E247AD8190021031E /* BlockRule.swift in Sources */,
 				FB0E11292469BA4100FCDAC2 /* LoginView.swift in Sources */,
-				02C49152246CB5FE00C632E9 /* LoginViewModel.swift in Sources */,
 				FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */,
 				02BC3090247AD8190021031E /* DictionaryWordRule.swift in Sources */,
 				02BC3092247AD8190021031E /* RegularExpressionRule.swift in Sources */,

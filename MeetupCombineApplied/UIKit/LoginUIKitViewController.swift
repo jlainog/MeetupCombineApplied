@@ -8,6 +8,7 @@
 
 import UIKit
 import Combine
+import ComposableArchitecture
 
 class LoginUIKitViewController: UITableViewController {
     private var cancellables = Set<AnyCancellable>()
@@ -17,52 +18,79 @@ class LoginUIKitViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordAgainTextField: UITextField!
     
-    private var viewModel: LoginViewModel = .init()
+    let viewStore: ViewStore<LoginState, LoginAction>
     
-    private func reloadUI() {
-        self.tableView.beginUpdates()
-        let emailfooter = tableView.footerView(forSection: 0)
-        emailfooter?.textLabel?.text = viewModel.mailMessage
-        emailfooter?.textLabel?.textColor = .red
-        
-        let passwordfooter = tableView.footerView(forSection: 1)
-        passwordfooter?.textLabel?.text = self.viewModel.passwordMessage
-        passwordfooter?.textLabel?.textColor = .red
-        
-        self.continueButton.isEnabled = self.viewModel.enabledContinue
-        self.tableView.endUpdates()
+    required init?(coder: NSCoder) {
+        let deletate = UIApplication.shared.delegate as! AppDelegate
+        self.viewStore = ViewStore(deletate.store)
+        super.init(coder: coder)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.objectWillChange
-            .sink(receiveValue: { [weak self] _ in
-                DispatchQueue.main.async {
-                    self?.reloadUI()
-                }
-            }).store(in: &cancellables)
- 
+        
+        viewStore.publisher
+            .email
+            .assign(to: \.text!, on: emailTextField)
+            .store(in: &cancellables)
+        viewStore.publisher
+            .password
+            .assign(to: \.text!, on: passwordTextField)
+            .store(in: &cancellables)
+        viewStore.publisher
+            .passwordAgain
+            .assign(to: \.text!, on: passwordAgainTextField)
+            .store(in: &cancellables)
+        
+        viewStore.publisher
+            .emailMessage
+            .sink {
+                self.tableView.beginUpdates()
+                let emailfooter = self.tableView.footerView(forSection: 0)
+                emailfooter?.textLabel?.textColor = .red
+                emailfooter?.textLabel?.text = $0
+                self.tableView.endUpdates()
+            }
+            .store(in: &cancellables)
+        
+        viewStore.publisher
+            .passwordMessage
+            .sink {
+                self.tableView.beginUpdates()
+                let passwordfooter = self.tableView.footerView(forSection: 1)
+                passwordfooter?.textLabel?.textColor = .red
+                passwordfooter?.textLabel?.text = $0
+                self.tableView.endUpdates()
+            }
+            .store(in: &cancellables)
+        
+        Publishers
+            .CombineLatest(viewStore.publisher.hasValidEmail,
+                           viewStore.publisher.hasValidPassword)
+            .sink {
+                self.tableView.beginUpdates()
+                self.continueButton.isEnabled = $0 && $1
+                self.tableView.endUpdates()
+        }
+        .store(in: &cancellables)
         
         NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification, object: nil).sink { [weak self] notification in
             guard let textField = notification.object as? UITextField else { return }
             
             switch textField {
             case self?.emailTextField:
-                self?.viewModel.mail = self?.emailTextField.text ?? ""
+                self?.viewStore.send(.emailTextChanged(self?.emailTextField.text ?? ""))
                 
             case self?.passwordTextField:
-                self?.viewModel.password = self?.passwordTextField.text ?? ""
+                self?.viewStore.send(.passwordChanged(self?.passwordTextField.text ?? ""))
                 
             case self?.passwordAgainTextField:
-                self?.viewModel.passwordAgain = self?.passwordAgainTextField.text ?? ""
+                self?.viewStore.send(.passwordAgainChanged(self?.passwordAgainTextField.text ?? ""))
                 
             default: break
             }
         }.store(in: &cancellables)
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        reloadUI()
-    }
 }

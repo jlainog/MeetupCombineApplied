@@ -11,16 +11,11 @@ import ComposableArchitecture
 
 class LoginSwiftUIViewController: UIHostingController<AnyView> {
     @objc required dynamic init?(coder aDecoder: NSCoder) {
+        let deletate = UIApplication.shared.delegate as! AppDelegate
         super.init(
             coder: aDecoder,
             rootView: AnyView(
-                LoginFormView(
-                    store: Store(
-                        initialState: LoginState(),
-                        reducer: loginReducer,
-                        environment: LoginEnvironment()
-                    )
-                )
+                LoginFormView(store: deletate.store)
             )
         )
     }
