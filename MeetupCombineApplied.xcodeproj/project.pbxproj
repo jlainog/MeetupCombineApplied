@@ -19,6 +19,8 @@
 		02BC3091247AD8190021031E /* Navajo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3086247AD8190021031E /* Navajo.swift */; };
 		02BC3092247AD8190021031E /* RegularExpressionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3087247AD8190021031E /* RegularExpressionRule.swift */; };
 		02BC3093247AD8190021031E /* AllowedCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3088247AD8190021031E /* AllowedCharacterRule.swift */; };
+		02BC3095247B0DB60021031E /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3094247B0DB60021031E /* SnapshotTests.swift */; };
+		02BC3098247B0E170021031E /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 02BC3097247B0E170021031E /* SnapshotTesting */; };
 		FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */; };
 		FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */; };
 		FB0E110B2469B9F400FCDAC2 /* LoginUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E110A2469B9F400FCDAC2 /* LoginUIKitViewController.swift */; };
@@ -51,6 +53,7 @@
 		02BC3086247AD8190021031E /* Navajo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navajo.swift; sourceTree = "<group>"; };
 		02BC3087247AD8190021031E /* RegularExpressionRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionRule.swift; sourceTree = "<group>"; };
 		02BC3088247AD8190021031E /* AllowedCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllowedCharacterRule.swift; sourceTree = "<group>"; };
+		02BC3094247B0DB60021031E /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 		FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupCombineApplied.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02BC3098247B0E170021031E /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				FB0E111D2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift */,
+				02BC3094247B0DB60021031E /* SnapshotTests.swift */,
 				FB0E111F2469B9F800FCDAC2 /* Info.plist */,
 			);
 			path = MeetupCombineAppliedTests;
@@ -198,6 +203,9 @@
 				FB0E111B2469B9F800FCDAC2 /* PBXTargetDependency */,
 			);
 			name = MeetupCombineAppliedTests;
+			packageProductDependencies = (
+				02BC3097247B0E170021031E /* SnapshotTesting */,
+			);
 			productName = MeetupCombineAppliedTests;
 			productReference = FB0E11192469B9F800FCDAC2 /* MeetupCombineAppliedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -232,6 +240,7 @@
 			mainGroup = FB0E10FA2469B9F400FCDAC2;
 			packageReferences = (
 				02BC30652479C2CB0021031E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				02BC3096247B0E170021031E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = FB0E11042469B9F400FCDAC2 /* Products */;
 			projectDirPath = "";
@@ -291,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0E111E2469B9F800FCDAC2 /* MeetupCombineAppliedTests.swift in Sources */,
+				02BC3095247B0DB60021031E /* SnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +565,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		02BC3096247B0E170021031E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -562,6 +580,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 02BC30652479C2CB0021031E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		02BC3097247B0E170021031E /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02BC3096247B0E170021031E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

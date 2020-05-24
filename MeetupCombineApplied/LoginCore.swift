@@ -55,7 +55,7 @@ public let loginReducer = Reducer<LoginState, LoginAction, LoginEnvironment> {
         state.hasValidEmail = isValid
         state.emailMessage = isValid
             ? ""
-            : "Your should enter a valid email"
+            : "You should enter a valid email"
         return .none
         
     case .passwordChanged(let password):
@@ -87,7 +87,7 @@ public let loginReducer = Reducer<LoginState, LoginAction, LoginEnvironment> {
         state.passwordMessage = messages.first ?? ""
         return .none
     }
-}
+}.debug()
 
 func passwordValidator(_ password: String, _ passwordAgain: String) -> [String] {
     var messages = [String]()

@@ -30,7 +30,7 @@ class MeetupCombineAppliedTests: XCTestCase {
             .do { self.testScheduler.advance(by: 0.5) },
             .receive(.isValidEmail(false)) {
                 $0.hasValidEmail = false
-                $0.emailMessage = "Your should enter a valid email"
+                $0.emailMessage = "You should enter a valid email"
             },
             
             .send(.emailTextChanged("a@a.com")) {
@@ -78,9 +78,6 @@ class MeetupCombineAppliedTests: XCTestCase {
             
             .send(.passwordChanged("ABC$%^123!@#")) {
                 $0.password = "ABC$%^123!@#"
-            },
-            .send(.passwordAgainChanged("ABC$%^123!@")) {
-                $0.passwordAgain = "ABC$%^123!@"
             },
             .do { self.testScheduler.advance(by: 0.5) },
             .receive(.isValidPassword(allMessages.suffix(1))) {
