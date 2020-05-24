@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BC30672479C2CB0021031E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 02BC30662479C2CB0021031E /* ComposableArchitecture */; };
+		02BC307B2479CE2D0021031E /* LoginCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC307A2479CE2D0021031E /* LoginCore.swift */; };
+		02BC3089247AD8190021031E /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC307D247AD8180021031E /* PasswordRule.swift */; };
+		02BC308B247AD8190021031E /* PredicateRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC307F247AD8180021031E /* PredicateRule.swift */; };
+		02BC308C247AD8190021031E /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3080247AD8180021031E /* PasswordValidator.swift */; };
+		02BC308D247AD8190021031E /* RequiredCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3082247AD8190021031E /* RequiredCharacterRule.swift */; };
+		02BC308E247AD8190021031E /* BlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3083247AD8190021031E /* BlockRule.swift */; };
+		02BC308F247AD8190021031E /* LengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3084247AD8190021031E /* LengthRule.swift */; };
+		02BC3090247AD8190021031E /* DictionaryWordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3085247AD8190021031E /* DictionaryWordRule.swift */; };
+		02BC3091247AD8190021031E /* Navajo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3086247AD8190021031E /* Navajo.swift */; };
+		02BC3092247AD8190021031E /* RegularExpressionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3087247AD8190021031E /* RegularExpressionRule.swift */; };
+		02BC3093247AD8190021031E /* AllowedCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3088247AD8190021031E /* AllowedCharacterRule.swift */; };
 		02C49152246CB5FE00C632E9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C49151246CB5FE00C632E9 /* LoginViewModel.swift */; };
 		FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */; };
 		FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E11082469B9F400FCDAC2 /* SceneDelegate.swift */; };
@@ -29,6 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BC307A2479CE2D0021031E /* LoginCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCore.swift; sourceTree = "<group>"; };
+		02BC307D247AD8180021031E /* PasswordRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
+		02BC307F247AD8180021031E /* PredicateRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateRule.swift; sourceTree = "<group>"; };
+		02BC3080247AD8180021031E /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		02BC3082247AD8190021031E /* RequiredCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredCharacterRule.swift; sourceTree = "<group>"; };
+		02BC3083247AD8190021031E /* BlockRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockRule.swift; sourceTree = "<group>"; };
+		02BC3084247AD8190021031E /* LengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthRule.swift; sourceTree = "<group>"; };
+		02BC3085247AD8190021031E /* DictionaryWordRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryWordRule.swift; sourceTree = "<group>"; };
+		02BC3086247AD8190021031E /* Navajo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navajo.swift; sourceTree = "<group>"; };
+		02BC3087247AD8190021031E /* RegularExpressionRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionRule.swift; sourceTree = "<group>"; };
+		02BC3088247AD8190021031E /* AllowedCharacterRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllowedCharacterRule.swift; sourceTree = "<group>"; };
 		02C49151246CB5FE00C632E9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupCombineApplied.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E11062469B9F400FCDAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02BC30672479C2CB0021031E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BC307C247AD7F80021031E /* Navajo-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				02BC3088247AD8190021031E /* AllowedCharacterRule.swift */,
+				02BC3083247AD8190021031E /* BlockRule.swift */,
+				02BC3085247AD8190021031E /* DictionaryWordRule.swift */,
+				02BC3084247AD8190021031E /* LengthRule.swift */,
+				02BC3086247AD8190021031E /* Navajo.swift */,
+				02BC307D247AD8180021031E /* PasswordRule.swift */,
+				02BC3080247AD8180021031E /* PasswordValidator.swift */,
+				02BC307F247AD8180021031E /* PredicateRule.swift */,
+				02BC3087247AD8190021031E /* RegularExpressionRule.swift */,
+				02BC3082247AD8190021031E /* RequiredCharacterRule.swift */,
+			);
+			path = "Navajo-Swift";
+			sourceTree = "<group>";
+		};
 		02C4914F246CB5CB00C632E9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +122,7 @@
 		FB0E10FA2469B9F400FCDAC2 = {
 			isa = PBXGroup;
 			children = (
+				02BC307C247AD7F80021031E /* Navajo-Swift */,
 				FB0E11052469B9F400FCDAC2 /* MeetupCombineApplied */,
 				FB0E111C2469B9F800FCDAC2 /* MeetupCombineAppliedTests */,
 				FB0E11042469B9F400FCDAC2 /* Products */,
@@ -108,6 +150,7 @@
 				FB0E110F2469B9F700FCDAC2 /* Assets.xcassets */,
 				FB0E11112469B9F700FCDAC2 /* LaunchScreen.storyboard */,
 				FB0E11142469B9F700FCDAC2 /* Info.plist */,
+				02BC307A2479CE2D0021031E /* LoginCore.swift */,
 			);
 			path = MeetupCombineApplied;
 			sourceTree = "<group>";
@@ -137,6 +180,9 @@
 			dependencies = (
 			);
 			name = MeetupCombineApplied;
+			packageProductDependencies = (
+				02BC30662479C2CB0021031E /* ComposableArchitecture */,
+			);
 			productName = MeetupCombineApplied;
 			productReference = FB0E11032469B9F400FCDAC2 /* MeetupCombineApplied.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +233,9 @@
 				Base,
 			);
 			mainGroup = FB0E10FA2469B9F400FCDAC2;
+			packageReferences = (
+				02BC30652479C2CB0021031E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FB0E11042469B9F400FCDAC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,11 +271,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02BC307B2479CE2D0021031E /* LoginCore.swift in Sources */,
 				FB0E110B2469B9F400FCDAC2 /* LoginUIKitViewController.swift in Sources */,
+				02BC3093247AD8190021031E /* AllowedCharacterRule.swift in Sources */,
+				02BC3091247AD8190021031E /* Navajo.swift in Sources */,
+				02BC3089247AD8190021031E /* PasswordRule.swift in Sources */,
 				FB0E11072469B9F400FCDAC2 /* AppDelegate.swift in Sources */,
+				02BC308E247AD8190021031E /* BlockRule.swift in Sources */,
 				FB0E11292469BA4100FCDAC2 /* LoginView.swift in Sources */,
 				02C49152246CB5FE00C632E9 /* LoginViewModel.swift in Sources */,
 				FB0E11092469B9F400FCDAC2 /* SceneDelegate.swift in Sources */,
+				02BC3090247AD8190021031E /* DictionaryWordRule.swift in Sources */,
+				02BC3092247AD8190021031E /* RegularExpressionRule.swift in Sources */,
+				02BC308C247AD8190021031E /* PasswordValidator.swift in Sources */,
+				02BC308F247AD8190021031E /* LengthRule.swift in Sources */,
+				02BC308D247AD8190021031E /* RequiredCharacterRule.swift in Sources */,
+				02BC308B247AD8190021031E /* PredicateRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02BC30652479C2CB0021031E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02BC30662479C2CB0021031E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02BC30652479C2CB0021031E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB0E10FB2469B9F400FCDAC2 /* Project object */;
 }
